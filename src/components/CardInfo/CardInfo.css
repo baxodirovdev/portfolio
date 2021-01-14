@@ -5,6 +5,7 @@
   padding: 20px;
   margin: 20px 0;
   color: aliceblue;
+  background: var(--main-color);
 }
 .cardInfo__box {
   display: flex;
@@ -25,11 +26,11 @@
   font-size: 1.3rem;
 }
 
-@media(max-width: 625px){
-    .cardInfo{
-        width: 300px;
-    }
-    .cardInfo__box{
-        display: inline-block;
-    }
+@media (max-width: 625px) {
+  .cardInfo {
+    width: 300px;
+  }
+  .cardInfo__box {
+    display: inline-block;
+  }
 }

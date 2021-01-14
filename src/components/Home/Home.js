@@ -3,11 +3,12 @@ import "./Home.css";
 import samurai from "../../assets/images/samurai2.jpg";
 import { Particle } from "../Particles/Particle";
 import ReactTyped from "react-typed";
-export const Home = () => {
+export const Home = ({ winWidth }) => {
   return (
     <div className="home">
       <div className="home__box">
-        <Particle />
+        {winWidth && <Particle />}
+
         <div className="home__info">
           <h1>HI I AM AKMAL</h1>
           <div className="home__typed">

@@ -11,8 +11,12 @@ import { Loader } from "../components/Loader/Loader";
 
 function App() {
   const [loader, setLoader] = useState(true);
+  const [winWidth, setWinWidth] = useState(true);
 
   useEffect(() => {
+    if (window.innerWidth < 600) {
+      setWinWidth(false);
+    }
     setLoader(false);
   }, []);
 
@@ -25,7 +29,9 @@ function App() {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/">
+            <Home winWidth={winWidth} />
+          </Route>
           <Route path="/about" component={About} />
           <Route path="/skills" component={Skills} />
           <Route path="/work" component={Work} />

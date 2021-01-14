@@ -4,7 +4,7 @@ import "./CardInfo.css";
 export const CardInfo = ({ title, number, industry, name, arrow, bgColor }) => {
   return (
     <Fragment>
-      <div className="cardInfo" style={{ background: `${bgColor}` }}>
+      <div className="cardInfo" >
         <div className="cardInfo__box">
           <h3 className="cardInfo__title">{title}</h3>
           <span className="cardInfo__time">{number}</span>
@@ -16,3 +16,5 @@ export const CardInfo = ({ title, number, industry, name, arrow, bgColor }) => {
     </Fragment>
   );
 };
+
+// style={{ background: `${bgColor}` }}

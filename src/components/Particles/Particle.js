@@ -7,7 +7,7 @@ export const Particle = () => {
       params={{
         particles: {
           number: {
-            value: 250,
+            value: 150,
           },
           size: {
             value: 3,
