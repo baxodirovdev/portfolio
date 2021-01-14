@@ -1,0 +1,35 @@
+.home {
+  display: flex;
+}
+
+.home__info {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 21;
+}
+.home__info h1 {
+  font-size: 100px;
+}
+.home__typed {
+  width: 100%;
+}
+.home__typed {
+  font-size: 5rem;
+  font-family: "cf_samurai_bobregular", sans-serif !important;
+  background: transparent;
+  border: none;
+  width: 100%;
+  color: var(--main-color) !important;
+}
+.home__box img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 500px;
+  z-index: 2;
+}

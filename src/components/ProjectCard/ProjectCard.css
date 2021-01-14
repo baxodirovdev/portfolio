@@ -1,0 +1,113 @@
+.projectCard {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  margin: auto;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  z-index: 5;
+  border-radius: 10px;
+  display: none;
+}
+.projectCard:hover .projectCard__img {
+  opacity: 0.2;
+}
+.projectCard:hover .projectCard__text {
+  transform: translateY(60%);
+}
+.projectCard:hover .projectCard__button {
+  transform: translateY(-100%);
+}
+.projectCard__card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+.projectCard__img {
+  width: 100%;
+  height: 100%;
+}
+.projectCard__text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 6;
+  transform: translateY(-100%);
+  transition: 0.5s ease;
+  color: #242f41;
+  font-weight: 600;
+}
+.projectCard__text div {
+  font-size: 24px;
+}
+.projectCard__button {
+  position: absolute;
+  bottom: 0;
+  z-index: 6;
+  text-align: center;
+  width: 100%;
+  transform: translateY(200%);
+  font-size: 25px;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: 0.5s ease;
+}
+.projectCard__button a {
+  color: #242f41;
+  font-weight: 600;
+  text-decoration: none;
+  border: 2px solid #242f41;
+  padding: 10px 15px;
+}
+.animation__bounceIn {
+  animation: bounceIn;
+  animation-duration: 500ms;
+  display: block;
+}
+
+.animation__bounceOut {
+  animation: bounceOut;
+  animation-duration: 500ms;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  90% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  100%{
+    display: none;
+  }
+}

@@ -1,0 +1,35 @@
+.cardInfo {
+  width: 600px;
+  min-width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  color: aliceblue;
+}
+.cardInfo__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cardInfo__title {
+  font-size: 2rem;
+}
+.cardInfo__time {
+  font-size: 1.3rem;
+}
+.cardInfo__industry {
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.cardInfo__name {
+  font-size: 1.3rem;
+}
+
+@media(max-width: 625px){
+    .cardInfo{
+        width: 300px;
+    }
+    .cardInfo__box{
+        display: inline-block;
+    }
+}

@@ -1,0 +1,258 @@
+.wrapper {
+  min-height: 100vh;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  height: 100vh;
+  font-size: 40px;
+  font-weight: 100;
+  padding: 0 10px;
+  color: #242f41;
+}
+/* section:nth-child(2) {
+  background: #ba0101;
+}
+
+section:nth-child(3) {
+  background: #001a9e;
+}
+section:nth-child(4) {
+  background: #d80027;
+}
+section:nth-child(5) {
+  background: #005aed;
+}
+section:nth-child(6) {
+  background: #ff0a0a;
+}
+section:nth-child(7) {
+  background: #22a7f0;
+} */
+
+.nav__wrapper {
+  position: fixed;
+  height: 100%;
+  padding: 30px;
+  margin: 0 0 100px 30px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  z-index: 3;
+}
+.nav__counter {
+  font-size: 24px;
+  transition: all 0.15s ease-out;
+}
+.nav__title {
+  font-size: 32px;
+  font-weight: 300;
+  margin: 0 0 0.25em;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav__body {
+  font-weight: 100;
+  font-size: 18px;
+  font-size: 18px;
+  width: 300px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: height 0.3s ease-out, opacity 0.2s ease-out;
+}
+.nav li {
+  position: relative;
+  transition: all 0.3s ease-out;
+  margin-bottom: 1em;
+  list-style: none;
+
+}
+.nav li a::after {
+  content: "";
+  display: block;
+  border-left: 2px solid #242f41;
+  border-top: 2px solid #242f41;
+  height: 250px;
+  width: 20px;
+  position: absolute;
+  left: -30px;
+  top: 15px;
+  
+}
+
+.nav li a {
+  display: block;
+  padding: 0;
+  color: #242f41;
+  transition: all 0.15s ease-out;
+  text-decoration: none;
+  cursor: pointer;
+  
+}
+.nav li a:hover {
+  background-color: transparent;
+  padding-left: 1em;
+}
+.nav li a:focus {
+  background-color: transparent;
+}
+
+.nav li a.active {
+  pointer-events: none;
+  padding-left: 1em;
+}
+.nav li a.active::after {
+  width: 35px;
+  height: 400px;
+  top: 35px;
+}
+
+.nav li a.active .nav__counter {
+  font-size: 48px;
+}
+
+.nav li a.active .nav__title {
+  height: 40px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.nav li a.active .nav__body {
+  height: 100px;
+  opacity: 1;
+  overflow: visible;
+}
+
+.section1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 1vw;
+}
+.section1__image,
+.section1__info {
+  max-width: 500px;
+  margin: auto;
+}
+.section1__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.section1__info h1 {
+  font-size: 2.5rem;
+}
+.section1__info h3 {
+  font-size: 1.8rem;
+  margin: 20px 0;
+}
+.section1__info p {
+  font-size: 1.5rem;
+}
+
+.section2,
+.section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh 10px 10px;
+}
+.section4 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.hobby__card {
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 20px auto;
+  z-index: 2 ;
+}
+
+.hobby__front,
+.hobby__back {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: transform linear 0.5s;
+  border-radius: 20px;
+}
+.hobby__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: perspective(600px) rotateY(180deg);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-weight: 600;
+  padding: 10px;
+}
+.hobby__tile {
+  font-size: 42px;
+}
+.hobby__description {
+  font-size: 26px;
+}
+
+.hobby__front {
+  transform: perspective(600px) rotateY(0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hobby__front svg {
+  color: #fff;
+  font-size: 100px;
+}
+
+.hobby__card:hover > .hobby__front {
+  transform: perspective(600px) rotateY(-180deg);
+}
+.hobby__card:hover > .hobby__back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.hobby__card:nth-child(1) .hobby__front,
+.hobby__card:nth-child(1) .hobby__back {
+  background: linear-gradient(
+      111.85deg,
+      hsla(0, 0%, 100%, 0.3) -0.81%,
+      hsla(0, 0%, 100%, 0) 107.31%
+    ),
+    #1483f7;
+}
+
+.hobby__card:nth-child(2) .hobby__front,
+.hobby__card:nth-child(2) .hobby__back {
+  background: linear-gradient(
+      251.96deg,
+      hsla(0, 0%, 100%, 0.2) 5.49%,
+      hsla(0, 0%, 100%, 0) 97.88%
+    ),
+    #8530f1;
+}
+
+.hobby__card:nth-child(3) .hobby__front,
+.hobby__card:nth-child(3) .hobby__back {
+  background: linear-gradient(
+      105.01deg,
+      hsla(0, 0%, 100%, 0.3),
+      hsla(0, 0%, 100%, 0) 98.77%
+    ),
+    #f16a30;
+}
