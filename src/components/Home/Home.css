@@ -12,11 +12,8 @@
   justify-content: center;
   z-index: 21;
 }
-.home__info h1 {
-  font-size: 100px;
-}
-.home__typed {
-  width: 100%;
+.home__title {
+  font-size: 7rem;
 }
 .home__typed {
   font-size: 5rem;
@@ -32,4 +29,21 @@
   right: 0;
   width: 500px;
   z-index: 2;
+}
+@media (max-width: 991px) {
+  .home__title {
+    font-size: 5rem;
+  }
+  .home__typed {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .home__title {
+    font-size: 3rem;
+  }
+  .home__typed {
+    font-size: 2rem;
+  }
 }

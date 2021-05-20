@@ -72,7 +72,7 @@ export const Header = () => {
         <NavLink to="/about">
           <ListItem className="header__item" button>
             <AccountBox className="header__span" />
-            <ListItemText className="header__span">ABOUT</ListItemText>
+            <ListItemText className="header__span">CV</ListItemText>
           </ListItem>
         </NavLink>
 

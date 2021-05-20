@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import "./Contact.scss";
-import { Instagram, LinkedIn, Telegram } from "@material-ui/icons";
-import me from "../../assets/images/me3.jpg";
+import { GitHub, Instagram, LinkedIn, Telegram } from "@material-ui/icons";
+import me from "../../assets/images/photo_2021-04-05_18-43-37 (2).jpg";
 import samurai from '../../assets/images/samuraiContact.png'
 
 export const Contact = () => {
@@ -84,7 +84,37 @@ export const Contact = () => {
           </a>
 
           <a
-            href="https://www.instagram.com/baxodirovdev/"
+            href="https://github.com/baxodirovdev"
+            target="_blank"
+            rel="noreferrer"
+            className="gitHub"
+          >
+            <div className="icon">
+              <GitHub />
+            </div>
+
+            <div className="content">
+              <h1>GitHub</h1>
+              <span>baxodirovdev</span>
+            </div>
+
+            <svg
+              className="arrow"
+              xmlns="http://www.w3.org/2000/svg"
+              width="48"
+              height="48"
+              viewBox="0 0 48 48"
+            >
+              {" "}
+              <g className="nc-icon-wrapper" fill="#444444">
+                {" "}
+                <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>{" "}
+              </g>{" "}
+            </svg>
+          </a>
+
+          <a
+            href="https://www.instagram.com/baxodirov09/"
             className="instagram"
             target="_blank"
             rel="noreferrer"
@@ -95,7 +125,7 @@ export const Contact = () => {
 
             <div className="content">
               <h1>Instagram</h1>
-              <span>@baxodirovdev</span>
+              <span>@baxodirov09</span>
             </div>
 
             <svg

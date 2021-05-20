@@ -12,6 +12,7 @@ import shivaki from "../../assets/images/shivaki.jpg";
 import pizzeria from "../../assets/images/pizzeria.jpg";
 import cramer from "../../assets/images/cramer.jpg";
 import exchange from "../../assets/images/Exchange_Rates.png";
+import piano from "../../assets/images/Снимок экрана 2021-05-20 121341.png";
 import "./Work.css";
 export const Work = () => {
   useEffect(() => {
@@ -22,6 +23,13 @@ export const Work = () => {
   const highlight = useRef(null);
 
   const data = [
+    {
+      title: "Piano",
+      technologies: "Javascript",
+      filter: "2",
+      link: "https://baxodirovdev-virtual-piano.netlify.app/",
+      img: piano,
+    },
     {
       title: "Currency Calculator",
       technologies: "React js",

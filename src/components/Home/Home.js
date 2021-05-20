@@ -10,7 +10,7 @@ export const Home = ({ winWidth }) => {
         {winWidth && <Particle />}
 
         <div className="home__info">
-          <h1>HI I AM AKMAL</h1>
+          <h1 className='home__title'>HI I AM AKMAL</h1>
           <div className="home__typed">
             <ReactTyped
               strings={[

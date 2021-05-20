@@ -14,6 +14,7 @@ $black: #000000;
 $linkedIn: #0a66c2;
 $instagram: #9448b8;
 $telegram: #1da1f2;
+$github: #24292e;
 
 /* MIXINS
 ========================================== */
@@ -287,6 +288,9 @@ $telegram: #1da1f2;
         &:nth-of-type(3) {
           transition-delay: 0.9s;
         }
+        &:nth-of-type(4) {
+          transition-delay: 1.1s;
+        }
       }
     }
 
@@ -328,6 +332,20 @@ $telegram: #1da1f2;
         .content {
           h1 {
             color: $linkedIn;
+          }
+        }
+      }
+
+      &.gitHub {
+        .icon {
+          svg {
+            background-color: $github;
+          }
+        }
+
+        .content {
+          h1 {
+            color: $github;
           }
         }
       }
