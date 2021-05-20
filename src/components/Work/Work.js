@@ -28,7 +28,7 @@ export const Work = () => {
     {
       title: "Store CRM",
       technologies: "React js/Typescript/Redux/Ant-Design/Firebase",
-      filter: "2",
+      filter: "1",
       link: "https://storecrm-3fe74.web.app/",
       img: storeCrm,
     },
