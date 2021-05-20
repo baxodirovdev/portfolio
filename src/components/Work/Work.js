@@ -6,13 +6,15 @@ import telegram from "../../assets/images/telegram.jpeg";
 import tiktok from "../../assets/images/tiktok.jpg";
 import netflix from "../../assets/images/netflix.png";
 import instagram from "../../assets/images/instagram.jpg";
-import messanger from "../../assets/images/Facebookmessenger.jpg";
+import messenger from "../../assets/images/Facebookmessenger.jpg";
 import todo from "../../assets/images/todo.png";
 import shivaki from "../../assets/images/shivaki.jpg";
 import pizzeria from "../../assets/images/pizzeria.jpg";
 import cramer from "../../assets/images/cramer.jpg";
 import exchange from "../../assets/images/Exchange_Rates.png";
 import piano from "../../assets/images/Снимок экрана 2021-05-20 121341.png";
+import storeCrm from "../../assets/images/storecrm.png";
+
 import "./Work.css";
 export const Work = () => {
   useEffect(() => {
@@ -23,6 +25,13 @@ export const Work = () => {
   const highlight = useRef(null);
 
   const data = [
+    {
+      title: "Store CRM",
+      technologies: "React js/Typescript/Redux/Ant-Design/Firebase",
+      filter: "2",
+      link: "https://storecrm-3fe74.web.app/",
+      img: storeCrm,
+    },
     {
       title: "Piano",
       technologies: "Javascript",
@@ -84,7 +93,7 @@ export const Work = () => {
       technologies: "React js / Firebase / Material-ui",
       filter: "1",
       link: "https://facebook-messanger-clone-c31d3.web.app/",
-      img: messanger,
+      img: messenger,
     },
     {
       title: "Todo list ",
